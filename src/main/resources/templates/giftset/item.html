@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Collect Your Dream Gift Set!</title>
+    <link rel="stylesheet" th:href="@{/styles/basic.css}"/>
+</head>
+<body>
+<form method="post" th:object="${giftSet}" th:action="@{/giftset/create}">
+    <a th:href="@{/giftitem/create}">Add another item for this set</a>
+    <div th:if="${#fields.hasErrors()}"><span>Error exists in form!</span><br><br></div>
+    Name of your gift set creation: <input type="text" th:field="*{name}" />
+    <button>Send the request!</button>
+</form>
+</body>
+</html>

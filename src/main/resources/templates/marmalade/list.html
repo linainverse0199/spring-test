@@ -3,13 +3,13 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Users</title>
+    <title>Marmalade Creation Form</title>
     <link rel="stylesheet" th:href="@{/styles/basic.css}"/>
 </head>
 <body>
-<div th:each="user : ${users}" >
-    <span th:text="user.name"></span>
-    <span th:text="user.id"></span>
+<div th:each="marmalade : ${list}" >
+    Taste: <span th:text="marmalade.taste"></span>
+    ID: <span th:text="marmalade.id"></span>
 </div>
 </body>
 </html>

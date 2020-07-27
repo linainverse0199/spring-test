@@ -1,16 +1,12 @@
 package com.example.demo.controllers;
 
-import com.example.demo.model.UserItem;
-import com.example.demo.model.UserView;
+import com.example.demo.model.dtos.UserItem;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
-import java.util.Arrays;
 
 /**
  *

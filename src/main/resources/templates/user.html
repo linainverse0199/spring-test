@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+    <link rel="stylesheet" th:href="@{/styles/basic.css}"/>
+</head>
+<body>
+<form method="post" th:object="${user}" th:action="@{/users}">
+    <span th:if="${#fields.hasErrors()}">CC NUm Error</span>
+    <div th:each="item : ${list}">
+        <input name="options" type="checkbox" th:value="${item.id}"/>
+        <span th:text="${item.name}">%USERNAME%</span>
+    </div>
+    <button>Submit it all!</button>
+</form>
+</body>
+</html>

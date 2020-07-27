@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" th:href="@{/styles/basic.css}"/>
+</head>
+<body>
+<span th:if="${error}">Credentials are invalid, provide valid, please</span>
+<form method="post" th:action="@{/login}" id="loginForm">
+    <input type="text" name="username"/>
+    <input type="password" password="password"/>
+    <button>Submit it all!</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marmalade Form</title>
+    <link rel="stylesheet" th:href="@{/styles/basic.css}"/>
+</head>
+<body>
+<form method="post" th:object="${marmalade}" th:action="@{/marmalade/create}">
+    <div th:if="${#fields.hasErrors()}"><span>Error exists in form!</span><br><br></div>
+    Taste: <input type="text" th:field="*{taste}" />
+    Shape: <input type="text" th:field="*{shape}" />
+    <button>Submit it all!</button>
+</form>
+</body>
+</html>
