@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 /**
  * @SpringBootTest tells JUnit to bootstrap the test with Spring Boot capabilities.
  *
- * For now, itâ€™s enough to think of this as the test class equivalent of calling Spring-
+ * For now, it’s enough to think of this as the test class equivalent of calling Spring-
  * Application.run() in a main() method.
  */
 @SpringBootTest

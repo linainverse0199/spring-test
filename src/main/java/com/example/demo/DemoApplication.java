@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @SpringBootApplication is a composite application that combines three other
  * annotations:
- * @SpringBootConfigurationâ€”Designates this class as a configuration class.
- * @EnableAutoConfigurationâ€”Enables Spring Boot automatic configuration.
- * @ComponentScanâ€”Enables component scanning.
+ * @SpringBootConfiguration—Designates this class as a configuration class.
+ * @EnableAutoConfiguration—Enables Spring Boot automatic configuration.
+ * @ComponentScan—Enables component scanning.
  */
 @SpringBootApplication
 public class DemoApplication {
